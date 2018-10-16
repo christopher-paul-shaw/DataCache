@@ -1,6 +1,4 @@
 <?php
-
-use Exception;
 class DataCache {
 	public function __construct ($file, $timeout=180) {
 		$this->file = "/tmp/DataCache-{$file}.dat";
