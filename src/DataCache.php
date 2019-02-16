@@ -3,7 +3,7 @@ namespace CPS;
 
 class DataCache {
 
-	public function __construct ($name = 'default', $path = '', $timeout=180) {
+	public function __construct ($name = 'default', $path = '.', $timeout=180) {
 		$this->file = "{$path}/DataCache-{$name}.dat";
 		$this->cache_time = time() - $timeout;
 	}
