@@ -1,11 +1,10 @@
 <?php
 namespace CPS;
-use DateTime;
 
 class DataCache {
 
-	public function __construct ($file, $timeout=180) {
-		$this->file = "/tmp/DataCache-{$file}.dat";
+	public function __construct ($name = 'default', $path = '', $timeout=180) {
+		$this->file = "{$path}/DataCache-{$name}.dat";
 		$this->cache_time = time() - $timeout;
 	}
 
