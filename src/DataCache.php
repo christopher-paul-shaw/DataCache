@@ -9,6 +9,9 @@ class DataCache {
 	}
 
 	public function read () {
+		
+		if(!file_exists($this->file)) return false;
+		
 		$content = file_get_contents($this->file);
 		$modified = filemtime($this->file);
 		if ($modified <= $this->cache_time) {
