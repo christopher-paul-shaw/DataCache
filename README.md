@@ -1,6 +1,7 @@
-# DataCache
-Cache Frequently Accessed Data on Disk
+# Summary
+A PHP Class to cache frequently accessed Data to a file. 
 
+This is intended to be used to cache larger datasets such as database reports to prevent repetative and time / resource consuming data queries.
 
 # Usage
 
